@@ -2,6 +2,10 @@
    border: 1px solid red; 
 } */
 
+header {
+  border-bottom: 1px solid #6bc3fd;
+}
+
 .section {
   border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
@@ -123,6 +127,14 @@
   background-color: #e3f2fd;
   min-height: 40rem;
 }
+.product {
+  border-color: #8cd0fd;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  transition: transform 0.3s;
+}
+.product:hover {
+  transform: translateY(-8px);
+}
 .products .product img {
   max-height: 15rem;
   max-width: 100%;
@@ -145,8 +157,8 @@ footer .container {
 }
 footer .container .social h1 {
   margin: 10px 0;
-  font-size: 1.5rem;
-  color: white;
+  font-size: 2rem;
+  color: #0d6efd;
   font-weight: bold;
 }
 
@@ -159,33 +171,25 @@ footer .container .important-links .important li {
   padding: 0.8rem 0;
 }
 footer .container .important-links .important li:not(:last-child) {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #8cd0fd;
 }
 
 footer .container .important-links .important li a {
   display: inline-block;
   font-size: 0.9rem;
-  color: #b9b9b9;
-  transition: var(--main-transition);
+  color: white;
+  transition: 0.3s;
   text-decoration: none;
 }
-@media (max-width: 767px) {
-  footer .container .important-links .important li a {
-    color: white;
-  }
-}
-
 footer .container .important-links .important li:hover a {
   transform: translateX(10px);
-}
-footer .container .important-links .important li:hover a {
-  color: white;
+  color: #0d6efd;
 }
 footer .container .contact li {
   display: flex;
   align-items: center;
   color: #b9b9b9;
-  border: 1px solid #333;
+  border: 1px solid #8cd0fd;
   padding: 1rem;
   color: white;
 }
@@ -200,5 +204,5 @@ footer .container .contact li .info span {
 footer .container .map {
   width: 18rem;
   height: 17rem;
-  border: 3px solid white;
+  border: 3px solid #8cd0fd;
 }
