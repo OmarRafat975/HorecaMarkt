@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+    <title>Horeca Markt</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
+        <div class="container">
+          <a class="navbar-brand mb-0 h1 link-primary fs-4" href="#"
+            >Horeca Market</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section" id="section--1">
+        <div class="slider">
+          <div class="slide">
+            <img src="imgs/slider-img-1.jpg" alt="Photo 1" />
+          </div>
+          <div class="slide">
+            <img src="imgs/slider-img-2.jpg"" alt="Photo 2" />
+          </div>
+          <div class="slide">
+            <img src="imgs/slider-img-3.jpg"" alt="Photo 3" />
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+      <section class="products pb-5">
+        <div
+          class="container d-flex pt-5 gap-3 flex-wrap"
+          style="--bs-columns: 3"
+        >
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product border border-primary" style="width: 18rem">
+            <img
+              src="/imgs/product-1.jpg"
+              class="card-img-top"
+              alt="/imgs/product-1.jpg"
+            />
+            <div class="card-body border-top product__card__body">
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-primary">
+      <div class="container">
+        <div class="social">
+          <h1>Horeca Markt</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+            nulla rem, dignissimos iste aspernatur
+          </p>
+        </div>
+        <div class="important-links">
+          <ul class="important">
+            <li><a href="">&rarr; Important Link 1</a></li>
+            <li><a href="">&rarr; Important Link 2</a></li>
+            <li><a href="">&rarr; Important Link 3</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <ul>
+            <li>
+              <div class="info">Weerenweg 35 B, 1161 AG Zwanenburg</div>
+            </li>
+            <li>
+              <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </li>
+            <li>
+              <div class="info">
+                <span>+31 (0)20 497 63 25</span>
+                <span>+31 (0)64 555 95 53</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="map" id="map"></div>
+      </div>
+    </footer>
+  </body>
+</html>
