@@ -169,6 +169,11 @@ footer .container .important-links .important li a {
   transition: var(--main-transition);
   text-decoration: none;
 }
+@media (max-width: 767px) {
+  footer .container .important-links .important li a {
+    color: white;
+  }
+}
 
 footer .container .important-links .important li:hover a {
   transform: translateX(10px);
@@ -182,11 +187,9 @@ footer .container .contact li {
   color: #b9b9b9;
   border: 1px solid #333;
   padding: 1rem;
+  color: white;
 }
-footer .container .contact li i {
-  font-size: 1.3rem;
-  color: var(--main-color);
-}
+
 footer .container .contact li .info {
   line-height: 1.7;
   flex: 1;
