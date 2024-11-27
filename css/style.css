@@ -2,6 +2,14 @@
    border: 1px solid red; 
 } */
 
+:root {
+  --main-color: #e3f2fd;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
 header {
   border-bottom: 1px solid #6bc3fd;
 }
@@ -24,7 +32,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 500px;
+  height: 600px;
 
   display: flex;
   /* align-items: center; */
@@ -37,8 +45,9 @@ header {
 .slide > img {
   /* Only for images that have different size than slide */
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
+  padding-bottom: 100px;
 }
 
 .slider__btn {
@@ -122,22 +131,33 @@ header {
     background-color: transparent;
   }
 }
-
+/* Main Page */
 .products {
-  background-color: #e3f2fd;
+  background-color: var(--main-color);
   min-height: 40rem;
 }
 .product {
   border-color: #8cd0fd;
   box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
   transition: transform 0.3s;
+  overflow: hidden;
 }
 .product:hover {
   transform: translateY(-8px);
 }
+
 .products .product img {
-  max-height: 15rem;
-  max-width: 100%;
+  width: 18rem;
+  height: 18rem;
+  object-fit: fill;
+}
+.products .product .product-name {
+  cursor: pointer;
+}
+
+/* about */
+.about {
+  min-height: 30rem;
 }
 
 /* Footer */

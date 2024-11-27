@@ -30,6 +30,7 @@
     ></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="script.js" defer></script>
+    <script src="map.js" defer></script>
     <title>Horeca Markt</title>
   </head>
   <body>
@@ -56,10 +57,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="html/about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -73,6 +74,14 @@
                 Search
               </button>
             </form>
+            <div class="d-grid">
+              <a
+                href="html/login.html"
+                class="btn btn-outline-primary mx-1 my-2"
+              >
+                Login
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -81,13 +90,13 @@
       <section class="section" id="section--1">
         <div class="slider">
           <div class="slide">
-            <img src="imgs/slider-img-1.jpg" alt="Photo 1" />
+            <img src="imgs/slider-img-1.jpeg" alt="Photo 1" />
           </div>
           <div class="slide">
-            <img src="imgs/slider-img-2.jpg"" alt="Photo 2" />
+            <img src="imgs/slider-img-2.jpeg"" alt="Photo 2" />
           </div>
           <div class="slide">
-            <img src="imgs/slider-img-3.jpg"" alt="Photo 3" />
+            <img src="imgs/slider-img-3.jpeg"" alt="Photo 3" />
           </div>
           <button class="slider__btn slider__btn--left">&larr;</button>
           <button class="slider__btn slider__btn--right">&rarr;</button>
@@ -101,11 +110,40 @@
         >
           <div class="card product m-auto" style="width: 18rem">
             <img
-              src="imgs/product-1.jpg"
+              src="imgs/product-2.jpg"
               class="card-img-top"
               alt="imgs/product-1.jpg"
             />
             <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, magnam!
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary fw-bold"
+                style="padding: 0.5rem 2rem"
+              >
+                Buy
+              </button>
+              <p class="fs-5 fw-bold mb-0">99 Є</p>
+            </div>
+          </div>
+          <div class="card product m-auto" style="width: 18rem">
+            <div class="img-box">
+              <img
+                src="imgs/product-3.jpg"
+                class="card-img-top"
+                alt="imgs/product-1.jpg"
+              />
+            </div>
+            <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, magnam!
@@ -131,6 +169,7 @@
               alt="imgs/product-1.jpg"
             />
             <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, magnam!
@@ -156,6 +195,7 @@
               alt="imgs/product-1.jpg"
             />
             <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, magnam!
@@ -181,6 +221,7 @@
               alt="imgs/product-1.jpg"
             />
             <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, magnam!
@@ -206,6 +247,7 @@
               alt="imgs/product-1.jpg"
             />
             <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, magnam!
@@ -231,6 +273,7 @@
               alt="imgs/product-1.jpg"
             />
             <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, magnam!
@@ -256,6 +299,7 @@
               alt="imgs/product-1.jpg"
             />
             <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, magnam!
@@ -281,31 +325,7 @@
               alt="imgs/product-1.jpg"
             />
             <div class="card-body border-top product__card__body">
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus, magnam!
-              </p>
-            </div>
-            <div
-              class="card-footer d-flex justify-content-between align-items-center"
-            >
-              <button
-                type="button"
-                class="btn btn-outline-primary fw-bold"
-                style="padding: 0.5rem 2rem"
-              >
-                Buy
-              </button>
-              <p class="fs-5 fw-bold mb-0">99 Є</p>
-            </div>
-          </div>
-          <div class="card product m-auto" style="width: 18rem">
-            <img
-              src="imgs/product-1.jpg"
-              class="card-img-top"
-              alt="imgs/product-1.jpg"
-            />
-            <div class="card-body border-top product__card__body">
+              <h3 class="link-primary fs-4 product-name">Product Name</h3>
               <p class="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, magnam!
@@ -327,7 +347,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="social">
           <h1>Horeca Markt</h1>
