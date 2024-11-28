@@ -14,6 +14,15 @@ header {
   border-bottom: 1px solid #6bc3fd;
 }
 
+@media (max-width: 991px) {
+  .login__btn {
+    margin-top: 10px;
+  }
+}
+.cart__btn,
+.login__btn {
+  font-size: 17px;
+}
 .section {
   border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
@@ -41,39 +50,44 @@ header {
   /* THIS creates the animation! */
   transition: transform 1s;
 }
+.dropdown-menu {
+  width: 300px;
+}
 
 .slide > img {
   /* Only for images that have different size than slide */
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding-bottom: 100px;
 }
-
+@media (min-width: 768px) {
+  .slide > img {
+    padding-bottom: 100px;
+  }
+}
 .slider__btn {
   text-align: center;
   position: absolute;
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
+  background-color: transparent;
   border: none;
-  background: rgba(255, 255, 255, 0.7);
   font-family: inherit;
-  color: #333;
-  border-radius: 50%;
+  color: #cccccc44;
   height: 3.5rem;
   width: 3.5rem;
-  font-size: 2.25rem;
+  font-size: 5.25rem;
   cursor: pointer;
 }
 
 .slider__btn--left {
-  left: 6%;
+  left: 1%;
   transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-  right: 6%;
+  right: 3%;
   transform: translate(50%, -50%);
 }
 
@@ -222,7 +236,7 @@ footer .container .contact li .info span {
   display: block;
 }
 footer .container .map {
-  width: 18rem;
+  width: 17rem;
   height: 17rem;
   border: 3px solid #8cd0fd;
 }
